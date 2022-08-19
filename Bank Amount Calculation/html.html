@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>DOM Special</h1>
+
+<button id="make-blue">Make Blue</button>
+<button id="make-red">Make Red</button>
+<button id="make-pink">Make Pink</button>
+<button id="make-green">Make Green</button>
+
+
+    <script src="java.js"></script>
+    <script>
+
+
+
+
+  document.getElementById('make-green').addEventListener('click',function(){
+    document.body.style.backgroundColor='green';
+  });
+
+
+
+
+
+  document.getElementById('make-pink').onclick=makeColorPink;
+  function makeColorPink(){
+    document.body.style.backgroundColor='pink';
+  }
+
+
+
+
+    let MakeBlue= document.getElementById('make-blue');
+    MakeBlue.onclick=makeColorBlue;
+    function makeColorBlue(){
+        document.body.style.backgroundColor='blue';
+    }
+        
+    
+
+
+
+    
+    const MakeRed= document.getElementById('make-red');
+        MakeRed.onclick=makeColor;
+        function makeColor(){
+            document.body.style.background='red';
+        }
+
+
+
+
+    </script>
+</body>
+</html>
