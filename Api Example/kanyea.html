@@ -8,9 +8,24 @@
     <style>
         .user{
             background-color: lightblue;
-            margin: 10px;
+            /* margin: 10px; */
             padding: 10px;
             border-radius: 10px;
+            border: 2px solid black;
+        }
+        #users-container{
+            background-color: blanchedalmond;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+            padding: 50px;
+        }
+        button{
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            border: 0px;
+            
         }
     </style>
 </head>
@@ -18,6 +33,12 @@
 
     <header>
         <h1>I wanna be International Lover</h1>
+        <section >
+                <h1>Country Details</h1>
+                <div id="country-details">
+ 
+                </div>
+        </section>
         <div id="users-container">
             
         </div>
@@ -35,3 +56,7 @@
     <script src="js/randomUser.js"></script>
 </body>
 </html>
+
+
+
+<img src="" alt="">
